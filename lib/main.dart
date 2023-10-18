@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:welltested_annotation/welltested_annotation.dart';
 
 import 'chat_screen.dart';
 
@@ -9,6 +10,7 @@ import 'chat_screen.dart';
 //   runApp(const MyApp());
 // }
 
+@Welltested()
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: "assets/.env");
